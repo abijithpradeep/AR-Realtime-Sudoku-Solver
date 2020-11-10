@@ -24,7 +24,7 @@ def main():
             valid_sudoku = False
             for rectangle in rectangles:
                 rot_matrix, pt_frame = processor.perspective_transform(rectangle, frame)
-                # cv2.imshow("sudoku", pt_frame)
+                cv2.imshow("sudoku", pt_frame)
                 sudoku_cells = processor.extract_cells(pt_frame)
                 digit_flags = list()
 

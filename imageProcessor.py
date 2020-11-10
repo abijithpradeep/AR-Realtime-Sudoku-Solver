@@ -182,7 +182,7 @@ class ImageProcessor:
                                       cv2.WARP_INVERSE_MAP
                                     )
         sudoku_portion = frame*(persp == 0)
-        cv2.imwrite("solvedSudoku.jpg", img)
+        cv2.imwrite("output/solvedSudoku.jpg", img)
         bg = persp*(persp!= 0) 
 
         return sudoku_portion + bg
